@@ -1,10 +1,10 @@
-package org.example.chapter01.hellojpa;
+package org.example.chapter01;
+
 
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.EntityTransaction;
 import jakarta.persistence.Persistence;
-import org.example.entity.Member;
 
 import java.util.List;
 

@@ -1,10 +1,10 @@
 
-package org.example.entity;
+package org.example.chapter01;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
-@Entity
+@Entity(name = "Member")
+@Table
 public class Member {
 
     @Id()

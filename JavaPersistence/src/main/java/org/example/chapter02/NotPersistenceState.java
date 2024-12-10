@@ -4,7 +4,7 @@ import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.EntityTransaction;
 import jakarta.persistence.Persistence;
-import org.example.entity.Member;
+import org.example.chapter01.Member;
 
 public class NotPersistenceState {
     private static final EntityManagerFactory entityManagerFactory =
@@ -24,8 +24,13 @@ public class NotPersistenceState {
             //em.detach(member);
 
             // 준영속 상태로 만드는 방법2
-            em.clear();
+            //em.clear();
             Member member2 = findMember(em, 1L);
+
+            // 준영속 상태로 만드는 방법3
+            em.close();
+            Member member3 = findMember(em, 1L);
+
 
             System.out.println("===============================");
         }catch (Exception e){
