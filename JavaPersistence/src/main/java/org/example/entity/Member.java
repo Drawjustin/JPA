@@ -1,4 +1,5 @@
-package org.example.hellojpa;
+
+package org.example.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -13,6 +14,9 @@ public class Member {
     public Member(Long id, String name) {
         this.id = id;
         this.name = name;
+    }
+
+    public Member() {
     }
 
     public Long getId() {
