@@ -1,4 +1,4 @@
-//package org.example.chapter03.domain;
+//package org.example.chapter04.wrongv1.domain;
 //
 //import jakarta.persistence.Column;
 //import jakarta.persistence.Entity;
@@ -6,16 +6,12 @@
 //import jakarta.persistence.Id;
 //
 //@Entity
-//public class Item03 {
+//public class Team04wv1 {
 //    @Id @GeneratedValue
-//    @Column(name = "ITEM_ID")
+//    @Column(name = "TEAM_ID")
 //    private Long id;
-//
+//    @Column(name = "TEAM_NAME")
 //    private String name;
-//
-//    private int price;
-//
-//    private int stockQuantity;
 //
 //    public Long getId() {
 //        return id;
@@ -31,21 +27,5 @@
 //
 //    public void setName(String name) {
 //        this.name = name;
-//    }
-//
-//    public int getPrice() {
-//        return price;
-//    }
-//
-//    public void setPrice(int price) {
-//        this.price = price;
-//    }
-//
-//    public int getStockQuantity() {
-//        return stockQuantity;
-//    }
-//
-//    public void setStockQuantity(int stockQuantity) {
-//        this.stockQuantity = stockQuantity;
 //    }
 //}

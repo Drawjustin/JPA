@@ -1,17 +1,36 @@
-//package org.example.chapter03.domain;
+//package org.example.chapter05.manytomany.domain;
 //
 //import jakarta.persistence.*;
+//import org.example.chapter05.onetoone.domain.Locker05oto;
+//
+//import java.util.ArrayList;
+//import java.util.List;
 //
 //@Entity
-//public class Member03 {
+//public class Member05mtm {
 //    @Id
 //    @GeneratedValue(strategy = GenerationType.AUTO)
 //    @Column(name = "MEMBER_ID")
 //    private Long id;
+//
 //    private String name;
+//
 //    private String city;
+//
 //    private String street;
+//
 //    private String zipcode;
+//
+//    @OneToOne
+//    @JoinColumn(name = "LOCKER_ID")
+//    private Locker05oto locker;
+//
+//    @OneToMany(mappedBy = "member")
+//    private List<MemberProduct05mtm> memberProducts = new ArrayList<>();
+////    @ManyToMany
+////    @JoinTable(name = "MEMBER_PRODUCT")
+////    private List<Product05mtm> products = new ArrayList<>();
+//
 //
 //    public Long getId() {
 //        return id;
@@ -52,4 +71,6 @@
 //    public void setZipcode(String zipcode) {
 //        this.zipcode = zipcode;
 //    }
+//
+//
 //}

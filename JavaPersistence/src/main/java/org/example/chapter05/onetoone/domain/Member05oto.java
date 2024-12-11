@@ -1,18 +1,28 @@
-//package org.example.chapter03.domain;
+//package org.example.chapter05.onetoone.domain;
 //
 //import jakarta.persistence.*;
 //
 //@Entity
-//public class Member03 {
+//public class Member05oto {
 //    @Id
 //    @GeneratedValue(strategy = GenerationType.AUTO)
 //    @Column(name = "MEMBER_ID")
 //    private Long id;
+//
 //    private String name;
+//
 //    private String city;
+//
 //    private String street;
+//
 //    private String zipcode;
 //
+//    @OneToOne
+//    @JoinColumn(name = "LOCKER_ID")
+//    private Locker05oto locker;
+//
+////    @OneToMany(mappedBy = "member")
+////    private List<Order04cv2> orders = new ArrayList<>();
 //    public Long getId() {
 //        return id;
 //    }
@@ -52,4 +62,6 @@
 //    public void setZipcode(String zipcode) {
 //        this.zipcode = zipcode;
 //    }
+//
+//
 //}
