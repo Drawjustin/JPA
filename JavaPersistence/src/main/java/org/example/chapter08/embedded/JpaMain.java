@@ -1,10 +1,13 @@
-//package org.example.chapter07.correctv1;
+//package org.example.chapter08.embedded;//package org.example.chapter07.correctv1;
 //
 //import jakarta.persistence.EntityManager;
 //import jakarta.persistence.EntityManagerFactory;
 //import jakarta.persistence.EntityTransaction;
 //import jakarta.persistence.Persistence;
-//import org.example.chapter07.correctv1.domain.Book07Cv1;
+//import org.example.chapter08.embedded.domain.Member08em;
+//import org.example.chapter08.embedded.domain.Period06do;
+//
+//import java.time.LocalDateTime;
 //
 //public class JpaMain {
 //    public static void main(String[] args) {
@@ -14,11 +17,11 @@
 //        tx.begin();
 //
 //        try {
-//            Book07Cv1 book = new Book07Cv1();
-//            book.setName("JPA");
-//            book.setAuthor("김영한");
+//            Member08em member = new Member08em();
+//            member.setUsername("hello");
+//            member.setPeriod(new Period06do(LocalDateTime.now(),LocalDateTime.now()));
+//            em.persist(member);
 //
-//            em.persist(book);
 //            tx.commit();
 //        }catch (Exception e){
 //            tx.rollback();
