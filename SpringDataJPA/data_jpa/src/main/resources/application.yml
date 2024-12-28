@@ -4,12 +4,16 @@ spring:
     username: sa
     password:
     driver-class-name: org.h2.Driver
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 37575ff4fc3d4db80631dde7b5a972b08af19999
   jpa:
     hibernate:
       ddl-auto: create
     properties:
+<<<<<<< HEAD
       hibernate:
         format_sql: true
         show_sql: true
@@ -17,3 +21,10 @@ logging:
   level:
     org.hibernate.sql: debug
 #    org.hibernate.type: trace
+=======
+  #        show_sql: true
+      format_sql: true
+logging.level:
+  org.hibernate.SQL: debug
+#  org.hibernate.type: trace
+>>>>>>> 37575ff4fc3d4db80631dde7b5a972b08af19999
