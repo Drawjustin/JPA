@@ -1,4 +1,4 @@
-package study.data_jpa.chapter06andchapter07.controller;
+package study.data_jpa.chapter08.controller;
 
 import jakarta.annotation.PostConstruct;
 import lombok.RequiredArgsConstructor;
@@ -9,9 +9,9 @@ import org.springframework.data.web.PageableDefault;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
-import study.data_jpa.chapter06andchapter07.dto.MemberDto;
-import study.data_jpa.chapter06andchapter07.entity.Member;
-import study.data_jpa.chapter06andchapter07.repository.MemberRepository;
+import study.data_jpa.chapter08.dto.MemberDto;
+import study.data_jpa.chapter08.entity.Member;
+import study.data_jpa.chapter08.repository.MemberRepository;
 
 @RestController
 @RequiredArgsConstructor
