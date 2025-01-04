@@ -1,7 +1,7 @@
-package study.data_jpa.chapter08.dto;
+package study.data_jpa.chapter08andchapter09.dto;
 
 import lombok.Data;
-import study.data_jpa.chapter08.entity.Member;
+import study.data_jpa.chapter08andchapter09.entity.Member;
 
 @Data
 public class MemberDto {

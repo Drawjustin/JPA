@@ -1,9 +1,9 @@
-package study.data_jpa.chapter08.service;
+package study.data_jpa.chapter08andchapter09.service;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
-import study.data_jpa.chapter08.entity.Member;
-import study.data_jpa.chapter08.repository.MemberJpaRepository;
+import study.data_jpa.chapter08andchapter09.entity.Member;
+import study.data_jpa.chapter08andchapter09.repository.MemberJpaRepository;
 
 @Service
 @RequiredArgsConstructor

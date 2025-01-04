@@ -1,4 +1,4 @@
-package study.data_jpa.chapter08.entity;
+package study.data_jpa.chapter08andchapter09.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -21,13 +21,13 @@ public class Member extends BaseEntity {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "team_id")
-    private study.data_jpa.chapter08.entity.Team team;
+    private study.data_jpa.chapter08andchapter09.entity.Team team;
 
     public Member(String username) {
         this.username = username;
     }
 
-    public Member(String username, int age, study.data_jpa.chapter08.entity.Team team) {
+    public Member(String username, int age, study.data_jpa.chapter08andchapter09.entity.Team team) {
         this.username = username;
         this.age = age;
         if(team != null) {

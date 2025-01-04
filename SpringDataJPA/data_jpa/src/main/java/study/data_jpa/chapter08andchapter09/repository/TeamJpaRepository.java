@@ -1,9 +1,9 @@
-package study.data_jpa.chapter08.repository;
+package study.data_jpa.chapter08andchapter09.repository;
 
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
 import org.springframework.stereotype.Repository;
-import study.data_jpa.chapter08.entity.Team;
+import study.data_jpa.chapter08andchapter09.entity.Team;
 
 import java.util.List;
 import java.util.Optional;

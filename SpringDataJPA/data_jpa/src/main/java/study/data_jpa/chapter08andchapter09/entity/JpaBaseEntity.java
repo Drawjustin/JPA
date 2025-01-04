@@ -1,4 +1,4 @@
-package study.data_jpa.chapter08.entity;
+package study.data_jpa.chapter08andchapter09.entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.MappedSuperclass;

@@ -1,4 +1,4 @@
-package study.data_jpa.chapter08.repository;
+package study.data_jpa.chapter08andchapter09.repository;
 
 import jakarta.persistence.LockModeType;
 import jakarta.persistence.QueryHint;
@@ -7,15 +7,15 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.*;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
-import study.data_jpa.chapter08.dto.MemberDto;
-import study.data_jpa.chapter08.entity.Member;
+import study.data_jpa.chapter08andchapter09.dto.MemberDto;
+import study.data_jpa.chapter08andchapter09.entity.Member;
 
 import java.util.Collection;
 import java.util.List;
 import java.util.Optional;
 
 @Repository
-public interface MemberRepository extends JpaRepository<Member,Long>, MemberRepositoryCustom {
+public interface MemberRepository extends JpaRepository<Member,Long>, MemberRepositoryCustom, JpaSpecificationExecutor<Member>{
     //메소드쿼리 길면 답없음
     List<Member> findByUsernameAndAgeGreaterThan(String username, int age);
 
@@ -65,6 +65,18 @@ public interface MemberRepository extends JpaRepository<Member,Long>, MemberRepo
 
     @Lock(LockModeType.PESSIMISTIC_WRITE)
     List<Member> findLockByUsername(String username);
+
+
+    <T> List<T> findProjectionsByUsername(@Param("username") String username, Class<T> type);
+
+    @Query(value = "select * from member where username = ?", nativeQuery = true)
+    Member findByNativeQuery(String username);
+
+    @Query(value = "select m.member_id as id, m.username, t.name as teamName " +
+            "from member m left join team t",
+            countQuery = "select count(*) from member",
+            nativeQuery = true)
+    Page<MemberProjection> findByNativeProjection(Pageable pageable);
 
 }
 

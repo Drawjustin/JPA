@@ -1,4 +1,4 @@
-package study.data_jpa.chapter08;
+package study.data_jpa.chapter08andchapter09;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

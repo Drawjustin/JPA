@@ -1,11 +1,9 @@
-package study.data_jpa.chapter08.entity;
+package study.data_jpa.chapter08andchapter09.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.EntityListeners;
-import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import lombok.AccessLevel;
-import lombok.Getter;
 import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.domain.Persistable;

@@ -1,9 +1,9 @@
-package study.data_jpa.chapter08.controller;
+package study.data_jpa.chapter08andchapter09.controller;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
-import study.data_jpa.chapter08.service.MemberServiceImpl;
+import study.data_jpa.chapter08andchapter09.service.MemberServiceImpl;
 
 @RestController
 @RequiredArgsConstructor

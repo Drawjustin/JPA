@@ -1,8 +1,8 @@
-package study.data_jpa.chapter08.repository;
+package study.data_jpa.chapter08andchapter09.repository;
 
 import jakarta.persistence.EntityManager;
 import lombok.RequiredArgsConstructor;
-import study.data_jpa.chapter08.entity.Member;
+import study.data_jpa.chapter08andchapter09.entity.Member;
 
 import java.util.List;
 
