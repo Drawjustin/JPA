@@ -7,10 +7,12 @@ spring:
   jpa:
     hibernate:
       ddl-auto: create
-      properties:
-        hibernate:
-# show_sql: true
-          format_sql: true
+    properties:
+      hibernate:
+        # show_sql: true  # 필요하면 주석 해제
+        format_sql: true
+        use_sql_comments: true
+
 logging.level:
   org.hibernate.SQL: debug
 # org.hibernate.type: trace
